@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="24.441" tests="2" skipped="0" failures="0" errors="0">
+<testcase classname="TS001 Login Functionality" name="TC001 Successful Login" time="18.121">
+<system-out><![CDATA[
+Given go to "BaseURL".......................................................passed
+When click "Log In" link....................................................passed
+Then page URL should be "LoginURL"..........................................passed
+When type login "username" into "username" box..............................passed
+And click login button......................................................passed
+And type login "password" into "password" box...............................passed
+Then board should be opened.................................................passed
+And close browser...........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="TS001 Login Functionality" name="TC002 Unsuccessful Login with Wrong Email" time="6.177">
+<system-out><![CDATA[
+Given go to "BaseURL".......................................................passed
+When click "Log In" link....................................................passed
+Then page URL should be "LoginURL"..........................................passed
+When type login "wrongUsername" into "username" box.........................passed
+And click login button......................................................passed
+Then error message should be visible........................................passed
+And close browser...........................................................passed
+]]></system-out>
+</testcase>
+</testsuite>
